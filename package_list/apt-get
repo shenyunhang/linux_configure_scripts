@@ -1,0 +1,49 @@
+# ================================
+# apt-get
+
+# tool
+ssh
+git
+curl
+htop
+# wine
+rar
+unrar
+
+# python
+python-pip
+python-tk
+
+# monitor
+htop
+#psensor
+#indicator-netspeed-unity
+
+# font
+ttf-wqy-zenhei
+ttf-wqy-microhei
+
+#linux-source
+
+# Hardware
+# We should use CUDA
+# nvidia-375-dev
+
+# Game
+# steam
+
+# Latex
+# texlive
+# texlive-science
+# texlive-latex-extra
+# texstudio
+
+# VPN
+proxychains
+
+# Console
+terminator
+
+liblapack-dev
+liblapacke-dev
+checkinstall
