@@ -20,7 +20,7 @@ sudo apt-get update
 
 sudo apt-get install -y $(grep -vE "^\s*#" package_list/apt-get | tr "\r\n" " ")
 
-sudo pip install -r package_list/pip
+sudo pip --no-cache-dir install -r package_list/pip
 
 sudo update-rc.d ssh defaults
 
