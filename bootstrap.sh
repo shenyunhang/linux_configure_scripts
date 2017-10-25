@@ -18,7 +18,7 @@ sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup && sudo mv sources.li
 
 sudo apt-get update
 
-sudo apt-get install -y $(grep -vE "^\s*#" package_list/apt-get | tr "\n" " ")
+sudo apt-get install -y $(grep -vE "^\s*#" package_list/apt-get | tr "\r\n" " ")
 
 sudo pip install -r package_list/pip
 
