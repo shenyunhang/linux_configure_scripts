@@ -9,7 +9,7 @@ sudo apt-get install -y python-pip
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 sudo dpkg-reconfigure locales
-pip install apt-select
+sudo pip install apt-select
 apt-select -C CN -c -t 3 -m one-week-behind
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup && sudo mv sources.list /etc/apt/
 
