@@ -4,7 +4,7 @@ set -x
 set -e
 
 cd ~/Documents
-rm -r nccl
+rm -rf nccl
 git clone https://github.com/NVIDIA/nccl.git
 
 cd nccl
