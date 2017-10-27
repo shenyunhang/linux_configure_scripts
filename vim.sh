@@ -6,7 +6,7 @@ set -e
 sudo apt-get install -y ctags python-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk
 
 sudo -H pip install --upgrade pip
-sudo -H pip install autopep8 jedi
+sudo -H pip install autopep8 jedi yapf
 
 cd ~/Documents
 rm -rf vim
