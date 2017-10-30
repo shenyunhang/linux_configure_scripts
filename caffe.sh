@@ -25,7 +25,7 @@ cd ~/Documents
 rm -rf opencv
 git clone https://github.com/opencv/opencv.git
 cd opencv
-git checkout 3.2.0
+git checkout 3.3.0
 mkdir build
 cd build
 #cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF ..
