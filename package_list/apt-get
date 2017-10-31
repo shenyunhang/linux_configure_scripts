@@ -33,10 +33,11 @@ ttf-wqy-microhei
 # steam
 
 # Latex
-# texlive
-# texlive-science
-# texlive-latex-extra
-# texstudio
+texlive
+texlive-science
+texlive-latex-extra
+texstudio
+texlive-fonts-extra 
 
 # VPN
 proxychains
