@@ -16,26 +16,7 @@ sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # Opencv
 echo "we need install opencv to build caffe"
-sudo apt-get install -y build-essential
-sudo apt-get install -y cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-sudo apt-get install -y python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
-sudo apt-get install -y liblapacke-dev checkinstall
-
-cd ~/Documents
-rm -rf opencv
-git clone https://github.com/opencv/opencv.git
-cd opencv
-git checkout 3.3.0
-mkdir build
-cd build
-#cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF ..
-cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF -D WITH_OPENCL=OFF ..
-make -j4
-#cd doc
-#make -j4 html-docs
-#cd ..
-sudo make install
-#exit
+./opencv.sh
 
 # Caffe
 cd ~/Documents
