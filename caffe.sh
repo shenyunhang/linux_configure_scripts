@@ -15,8 +15,10 @@ sudo apt-get install -y python-dev
 sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 # Opencv
-echo "we need install opencv to build caffe"
-./opencv.sh
+if [ ! -d ~/Documents/opencv  ]; then
+	echo "we need install opencv to build caffe"
+	./opencv.sh
+fi
 
 # Caffe
 cd ~/Documents

@@ -13,3 +13,5 @@ cd neovim
 git checkout v0.2.2
 make CMAKE_BUILD_TYPE=Release -j2
 sudo make install
+
+sudo pip2 install neovim

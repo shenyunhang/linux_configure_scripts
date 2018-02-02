@@ -48,3 +48,6 @@ terminator
 liblapack-dev
 liblapacke-dev
 checkinstall
+
+# email
+thunderbird
