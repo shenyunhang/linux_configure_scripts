@@ -43,4 +43,15 @@ cd ~/Documents
 rm -rf caffe2
 git clone --recursive https://github.com/caffe2/caffe2.git
 cd caffe2
-make && cd build && sudo make install
+mkdir -p build
+cd build
+cmake `python ../scripts/get_python_cmake_flags.py` -DCMAKE_INSTALL_PREFIX=~/Documents/caffe2/release ..
+make -j2
+make install
+
+python -c from caffe2.python import core 2>/dev/null && echo "Success" || echo "Failure"
+python -m caffe2.python.operator_test.relu_op_test
+
+echo "export LD_LIBRARY_PATH=~/Documents/caffe2/release/lib:$LD_LIBRARY_PATH"
+echo "export PYTHONPATH=~/Documents/caffe2/release:$PYTHONPATH"
+
