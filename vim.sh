@@ -13,7 +13,7 @@ rm -rf vim
 git clone https://github.com/vim/vim.git
 
 cd vim
-git checkout v8.0.0000
+git checkout v8.0.1000
 
 ./configure --with-features=huge --enable-pythoninterp --prefix=/usr/local
 make -j4
