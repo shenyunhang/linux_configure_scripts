@@ -52,3 +52,5 @@ checkinstall
 
 # email
 thunderbird
+
+redshift-gtk
