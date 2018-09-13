@@ -1,5 +1,7 @@
 # ================================
 # pip
+setuptools
+
 shadowsocks
 
 easydict
