@@ -6,7 +6,6 @@ ssh
 git
 curl
 htop
-# wine
 rar
 unrar
 
@@ -15,9 +14,9 @@ python-pip
 python-tk
 
 # monitor
-htop
-#psensor
-#indicator-netspeed-unity
+# redshift-gtk
+# psensor
+# indicator-netspeed-unity
 
 # font
 ttf-wqy-zenhei
@@ -30,6 +29,7 @@ ttf-wqy-microhei
 # nvidia-375-dev
 
 # Game
+# wine
 # steam
 
 # Latex
@@ -44,13 +44,11 @@ proxychains
 net-tools
 
 # Console
-terminator
+# terminator
 
 liblapack-dev
 liblapacke-dev
 checkinstall
 
 # email
-thunderbird
-
-redshift-gtk
+# thunderbird
