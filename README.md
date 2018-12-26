@@ -4,5 +4,5 @@ Only Ubuntu is support now.
 
 ## Usage
 ```
-mkdir -p ~/Documents && cd ~/Documents && git clone https://github.com/shenyunhang/system_script.git && cd system_script && bash bootstrap.sh
+mkdir -p ~/Documents && cd ~/Documents && git clone https://github.com/shenyunhang/linux_configure_scripts.git && cd linux_configure_scripts && bash bootstrap.sh
 ```
