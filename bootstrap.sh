@@ -5,11 +5,11 @@ set -x
 LOG=log.txt
 exec &> >(tee -a "$LOG")
 
-sudo apt-get install -y python-pip
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 sudo dpkg-reconfigure locales
 
+#sudo apt-get install -y python-pip
 #sudo pip install apt-select
 #apt-select -C CN -c -t 3 -m one-week-behind
 #sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup && sudo mv sources.list /etc/apt/
@@ -18,7 +18,6 @@ sudo dpkg-reconfigure locales
 ./add_repository.sh
 
 sudo apt-get update
-
 sudo apt-get install -y $(grep -vE "^\s*#" package_list/apt-get | tr "\r\n" " ")
 
 sudo pip install pip --upgrade
