@@ -5,9 +5,13 @@ set -x
 LOG=log.txt
 exec &> >(tee -a "$LOG")
 
+# set system locale
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 sudo dpkg-reconfigure locales
+
+# change timezone
+sudo timedatectl set-timezone Asia/Shanghai
 
 #sudo apt-get install -y python-pip
 #sudo pip install apt-select
