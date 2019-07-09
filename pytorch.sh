@@ -16,9 +16,8 @@ if [ ! -d ~/Documents/pytorch/pytorch ]; then
 
 	sudo pip3 install -r requirements.txt
 
-	#git submodule sync
-	#git submodule update --init --recursive
-	git submodule update --init
+	git submodule sync
+	git submodule update --init --recursive
 	sudo python3 setup.py install
 fi
 
