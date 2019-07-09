@@ -31,7 +31,6 @@ if [ ! -d ~/Documents/pytorch/vision ]; then
 
 	git submodule sync
 	git submodule update --init --recursive
-	#git submodule update --init --recursive
 	sudo python3 setup.py install
 fi
 
