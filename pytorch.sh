@@ -18,7 +18,7 @@ if [ ! -d ~/Documents/pytorch/pytorch ]; then
 
 	git submodule sync
 	git submodule update --init --recursive
-	sudo python3 setup.py install
+	sudo USE_OPENCV=On USE_LMDB=On BUILD_BINARY=On python3 setup.py install
 fi
 
 if [ ! -d ~/Documents/pytorch/vision ]; then
