@@ -9,10 +9,16 @@ sudo apt-get install -y python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev l
 sudo apt-get install -y liblapacke-dev checkinstall
 
 cd ~/Documents
-rm -rf opencv
-rm -rf opencv_contrib
-git clone https://github.com/opencv/opencv.git
-git clone https://github.com/opencv/opencv_contrib.git
+#rm -rf opencv
+#rm -rf opencv_contrib
+
+if [ ! -d ~/Documents/opencv ]; then
+	git clone https://github.com/opencv/opencv.git
+fi
+
+if [ ! -d ~/Documents/opencv_contrib ]; then
+	git clone https://github.com/opencv/opencv_contrib.git
+fi
 
 cd opencv_contrib
 git checkout 3.3.0
@@ -20,11 +26,14 @@ cd ..
 
 cd opencv
 git checkout 3.3.0
-mkdir build
+
+rm -fr build
+mkdir -p build
 cd build
 #cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF ..
 #cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF -D WITH_OPENCL=OFF ..
-cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF -D WITH_OPENCL=OFF -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+#cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF -D WITH_OPENCL=OFF -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=OFF -D WITH_OPENCL=OFF ..
 make -j
 #cd doc
 #make -j html-docs
