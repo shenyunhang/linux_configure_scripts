@@ -15,9 +15,12 @@ cd pytorch
 git checkout v1.2.0
 
 sudo pip3 install -r requirements.txt
+sudo pip3 install -r caffe2/requirements.txt
+sudo pip3 install protobuf
 
 git submodule sync
 git submodule update --init --recursive
+sudo rm -rf build
 sudo USE_OPENCV=On USE_LMDB=On BUILD_BINARY=On python3 setup.py install
 
 
