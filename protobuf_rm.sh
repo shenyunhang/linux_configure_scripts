@@ -1,12 +1,15 @@
 #/bin/bash
 
-set -e
+#set -e
 set -x
 
 sudo apt-get remove libprotobuf-dev
 sudo apt-get remove protobuf-compiler
 sudo apt-get remove python-protobuf
 sudo apt-get remove python3-protobuf
+
+sudo pip uninstall protobuf
+sudo pip3 uninstall protobuf
 
 sudo rm -rf /usr/local/bin/protoc
 sudo rm -rf /usr/bin/protoc
