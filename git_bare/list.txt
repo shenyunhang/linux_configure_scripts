@@ -1,24 +1,60 @@
-
 shenyunhang/Detectron_WSL.git
 shenyunhang/Classification.git
 shenyunhang/mmdetection_wsl.git
 shenyunhang/Detectron_reID.git
+shenyunhang/Detectron_LiverCancer.git
+shenyunhang/densecrf.git
+
+
+shenyunhang/ReID_pytorch.git
+shenyunhang/beyond-part-models.git
+shenyunhang/detectron_gcn.git
+shenyunhang/Gabor-Convolutional-Networks.git
+
+
+shenyunhang/CSM.git
+shenyunhang/PPS.git
+shenyunhang/CSC.git
+shenyunhang/GAL-fWSD.git
+shenyunhang/caffe-wsl.git
+shenyunhang/caffe-fwsl.git
+shenyunhang/image_crawler.git
+
 
 shenyunhang/cocoapi.git
 shenyunhang/mcg.git
 
 
 shenyunhang/linux_configure_scripts.git
+shenyunhang/shell_script.git
 shenyunhang/zshrc.git
 shenyunhang/vimrc.git
 shenyunhang/AutoSendMail.git
 shenyunhang/shenyunhang.github.io.git
-shenyunhang/PPS.git
-shenyunhang/CSC.git
-shenyunhang/GAL-fWSD.git
-shenyunhang/image_crawler.git
-shenyunhang/CSM.git
+shenyunhang/fortune-zh.git
+shenyunhang/gushiwen-crawler.git
+shenyunhang/gushiwen-crawler-data.git
+shenyunhang/fortune-zh-data.git
+shenyunhang/MendeleyFileOrganizer.git
+
+
+shenyunhang/waiguan.git
+shenyunhang/economic_gui.git
+shenyunhang/Autoorder.git
+shenyunhang/economic_gui.git
 
 
 facebookresearch/Detectron.git
 ppengtang/pcl.pytorch.git
+
+
+opencv/opencv.git
+opencv/opencv_contrib.git
+
+
+pytorch/pytorch.git
+pytorch/vision.git
+pytorch/examples.git
+
+open-mmlab/mmdetection.git
+open-mmlab/mmcv.git
