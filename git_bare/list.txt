@@ -1,4 +1,5 @@
 
+shenyunhang/detectron2_WSL.git
 shenyunhang/Detectron_WSL.git
 shenyunhang/Classification.git
 shenyunhang/mmdetection_wsl.git
@@ -20,5 +21,7 @@ shenyunhang/image_crawler.git
 shenyunhang/CSM.git
 
 
+pytorch/pytorch.git
 facebookresearch/Detectron.git
+facebookresearch/detectron2.git
 ppengtang/pcl.pytorch.git

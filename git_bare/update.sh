@@ -10,7 +10,7 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 
 
-input="list.txt"
+input="${SCRIPTPATH}/list.txt"
 while IFS= read -r line
 do
 	echo "$line"
