@@ -21,7 +21,7 @@ sudo pip3 install protobuf
 git submodule sync
 git submodule update --init --recursive
 sudo rm -rf build
-sudo USE_OPENCV=On USE_LMDB=On BUILD_BINARY=On python3 setup.py install
+sudo MAX_JOBS=4 USE_OPENCV=On USE_LMDB=On BUILD_BINARY=On python3 setup.py install
 
 
 echo "Installing vision"
