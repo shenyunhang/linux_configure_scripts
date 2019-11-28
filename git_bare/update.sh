@@ -22,10 +22,12 @@ do
 	if [ -d "$FILE" ]; then
 		echo '${line} exist'
 		cd ${FILE}
-		git fetch git@github.com:${line}
+		#git fetch git@github.com:${line}
+		git remote update
 	else
 		#git clone https://github.com/${line} ${FILE}
-		git clone --bare git@github.com:${line} ${FILE}
+		#git clone --bare git@github.com:${line} ${FILE}
+		git clone --mirror git@github.com:${line} ${FILE}
 	fi
 done < "$input"
 
