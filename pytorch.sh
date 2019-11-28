@@ -12,7 +12,7 @@ if [ ! -d ~/Documents/pytorch/pytorch ]; then
 	git clone https://github.com/pytorch/pytorch.git
 fi
 cd pytorch
-git checkout v1.2.0
+git checkout v1.3.0
 
 sudo pip3 install -r requirements.txt
 sudo pip3 install -r caffe2/requirements.txt
@@ -30,7 +30,7 @@ if [ ! -d ~/Documents/pytorch/vision ]; then
 	git clone https://github.com/pytorch/vision.git
 fi
 cd vision
-git checkout v0.4.0
+git checkout v0.4.1
 
 git submodule sync
 git submodule update --init --recursive
