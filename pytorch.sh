@@ -12,7 +12,7 @@ if [ ! -d ~/Documents/pytorch/pytorch ]; then
 	git clone https://github.com/pytorch/pytorch.git
 fi
 cd pytorch
-git checkout v1.3.0
+git checkout v1.3.1
 
 sudo pip3 install -r requirements.txt
 sudo pip3 install -r caffe2/requirements.txt
