@@ -36,7 +36,6 @@ shenyunhang/fortune-zh.git
 shenyunhang/gushiwen-crawler.git
 shenyunhang/gushiwen-crawler-data.git
 shenyunhang/fortune-zh-data.git
-shenyunhang/MendeleyFileOrganizer.git
 
 
 shenyunhang/waiguan.git
@@ -46,6 +45,7 @@ shenyunhang/economic_gui.git
 
 
 pytorch/pytorch.git
+pytorch/vison.git
 facebookresearch/Detectron.git
 facebookresearch/detectron2.git
 ppengtang/pcl.pytorch.git
@@ -61,3 +61,9 @@ pytorch/examples.git
 
 open-mmlab/mmdetection.git
 open-mmlab/mmcv.git
+
+
+D-X-Y/NAS-Projects.git
+
+
+github/gitignore.git
