@@ -44,8 +44,6 @@ shenyunhang/Autoorder.git
 shenyunhang/economic_gui.git
 
 
-pytorch/pytorch.git
-pytorch/vison.git
 facebookresearch/Detectron.git
 facebookresearch/detectron2.git
 ppengtang/pcl.pytorch.git
