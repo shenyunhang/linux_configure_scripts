@@ -9,8 +9,10 @@ set -x
 #####################################################################
 #####################################################################
 
-alias python='/usr/bin/python3.6'
-alias pip='/usr/local/bin/pip3.6'
+#alias python='/usr/bin/python3.6'
+#alias pip='/usr/local/bin/pip3.6'
+PYTHON='/usr/bin/python3.6'
+PIP='/usr/local/bin/pip3.6'
 
 cd ~/Documents
 mkdir -p pytorch
@@ -25,18 +27,19 @@ else
 	git fetch origin
 
 fi
-sudo rm -rf build
-rm -r ./*
-sudo git reset --hard HEAD
 git checkout v1.5.0
 
-sudo pip install -r requirements.txt
-sudo pip install -r caffe2/requirements.txt
-sudo pip install protobuf
+sudo rm -rf build
+sudo rm -r ./*
+git reset --hard HEAD
+
+sudo $PIP install -r requirements.txt
+sudo $PIP install -r caffe2/requirements.txt
+sudo $PIP install protobuf
 
 git submodule sync
 git submodule update --init --recursive
-sudo MAX_JOBS=4 USE_OPENCV=On USE_LMDB=On BUILD_BINARY=On python setup.py install
+sudo MAX_JOBS=32 USE_OPENCV=On USE_LMDB=On BUILD_BINARY=On $PYTHON setup.py install
 
 
 echo "Installing vision"
@@ -48,13 +51,18 @@ else
 	cd vision
 	git fetch origin
 fi
+
 #git checkout v0.5.0
 git checkout origin/master
 
+sudo rm -rf build
+sudo rm -r ./*
+git reset --hard HEAD
+
 git submodule sync
 git submodule update --init --recursive
-sudo rm -rf build
-sudo MAX_JOBS=4 python setup.py install
+
+sudo MAX_JOBS=4 $PYTHON setup.py install
 
 
 echo "Installing examples"
