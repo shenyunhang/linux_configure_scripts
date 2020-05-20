@@ -3,21 +3,24 @@
 set -x
 set -e
 
-sudo apt-get install -y ctags python-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk
+sudo apt-get install -y ctags python3-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk
 
-sudo -H pip install --upgrade pip
-sudo -H pip install autopep8 jedi yapf
+sudo -H pip3 install --upgrade pip
+sudo -H pip3 install autopep8 jedi yapf
 
 cd ~/Documents
 rm -rf vim
 git clone https://github.com/vim/vim.git
 
 cd vim
-git checkout v8.0.1000
+git checkout v8.2.0801
 
-./configure --with-features=huge --enable-pythoninterp --prefix=/usr/local
-make -j4
+./configure --with-features=huge \
+	--enable-python3interp \
+	--with-python3-config-dir=$(python3-config --configdir) \
+	--prefix=/usr/local 
+make -j8
 sudo make install
 
 cd ~
-sh <(curl -sSL https://raw.github.com/shenyunhang/vimrc/master/bootstrap.sh -L)
+#sh <(curl -sSL https://raw.github.com/shenyunhang/vimrc/master/bootstrap.sh -L)
