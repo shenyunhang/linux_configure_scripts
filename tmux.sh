@@ -4,8 +4,12 @@ set -x
 set -e
 
 # apt-get
+sudo apt-get install libevent-dev
+sudo apt-get install bison flex
+
 # tmux
 #sudo apt-get install -y tmux
+sudo apt-get remove -y tmux
 
 cd ~/Documents/
 git clone https://github.com/tmux/tmux.git
