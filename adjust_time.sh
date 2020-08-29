@@ -8,3 +8,5 @@ set -e
 sudo apt-get install ntpdate
 sudo ntpdate pool.ntp.org
 sudo hwclock --localtime --systohc
+
+sudo timedatectl set-timezone
