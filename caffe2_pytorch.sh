@@ -27,7 +27,8 @@ sudo apt-get install -y --no-install-recommends \
 	libgtest-dev \
 	libiomp-dev \
 	libleveldb-dev \
-	liblmdb-dev \
+	liblmdb-dev 
+	#\
 	#libopencv-dev \
 sudo apt-get install -y --no-install-recommends \
 	libopenmpi-dev \
