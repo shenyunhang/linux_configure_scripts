@@ -9,10 +9,15 @@ set -x
 #####################################################################
 #####################################################################
 
-#alias python='/usr/bin/python3.6'
-#alias pip='/usr/local/bin/pip3.6'
-PYTHON='/usr/bin/python3.6'
-PIP='/usr/local/bin/pip3.6'
+sudo apt-get install -y --no-install-recommends \
+	libleveldb-dev \
+	liblmdb-dev \
+	libopencv-dev \
+
+#alias python='/usr/bin/python3.8'
+#alias pip='/usr/local/bin/pip3.8'
+PYTHON='/usr/bin/python3.8'
+PIP='/usr/local/bin/pip3.8'
 
 cd ~/Documents
 mkdir -p pytorch
@@ -27,7 +32,7 @@ else
 	git fetch origin
 
 fi
-git checkout v1.5.0
+git checkout v1.6.0
 
 sudo rm -rf build
 sudo rm -r ./*
