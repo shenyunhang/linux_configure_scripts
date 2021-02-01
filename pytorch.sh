@@ -12,7 +12,7 @@ echo "#####################################################################"
 sudo apt-get install -y --no-install-recommends \
 	libleveldb-dev \
 	liblmdb-dev \
-	libopencv-dev \
+	libopencv-dev
 
 #alias python='/usr/bin/python3.8'
 #alias pip='/usr/local/bin/pip3.8'
