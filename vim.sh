@@ -8,7 +8,7 @@ sudo apt-get install -y ctags python3-pip cmake pep8 libncurses5-dev libclang-de
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install autopep8 jedi yapf
 
-cd ~/Documents
+cd ~/
 rm -rf vim
 git clone https://github.com/vim/vim.git
 
