@@ -3,7 +3,7 @@
 set -x
 set -e
 
-sudo apt-get install -y ctags python3-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk
+sudo apt-get install -y ctags python3-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk curl
 
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install autopep8 jedi yapf
