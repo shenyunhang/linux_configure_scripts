@@ -3,6 +3,9 @@
 set -x
 set -e
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+exit 0
+
 # apt-get
 # zsh
 # curl
