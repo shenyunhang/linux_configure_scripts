@@ -35,15 +35,15 @@ ttf-wqy-microhei
 # steam
 
 # Latex
-texlive
-texlive-science
-texlive-latex-extra
-texstudio
-texlive-fonts-extra 
+#texlive
+#texlive-science
+#texlive-latex-extra
+#texstudio
+#texlive-fonts-extra 
 
 # VPN
-proxychains
-net-tools
+#proxychains
+#net-tools
 
 # Console
 # terminator
