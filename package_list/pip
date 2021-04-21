@@ -10,6 +10,7 @@ powerline-status
 cython
 pyyaml
 lmdb
+xlrd
 
 numpy
 matplotlib
