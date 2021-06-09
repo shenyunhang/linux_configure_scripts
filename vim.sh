@@ -23,4 +23,4 @@ make -j8
 make install
 
 cd ~
-sh <(curl -sSL https://raw.github.com/shenyunhang/vimrc/master/bootstrap.sh -L)
+sh <(curl -sSL https://raw.githubusercontent.com/shenyunhang/vimrc/master/bootstrap.sh -L)
