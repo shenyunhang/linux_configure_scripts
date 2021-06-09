@@ -4,8 +4,8 @@ set -x
 set -e
 
 # apt-get
-apt-get install libevent-dev
-apt-get install bison flex
+apt-get install -y libevent-dev
+apt-get install -y bison flex
 
 # tmux
 apt-get install -y tmux
