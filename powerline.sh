@@ -3,9 +3,9 @@
 set -x
 set -e
 
-sudo apt install fontconfig
+apt install -y fontconfig
 
-sudo -H pip3 install powerline-status
+pip3 install powerline-status
 
 #wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 #wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
