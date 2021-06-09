@@ -3,10 +3,10 @@
 set -x
 set -e
 
-sudo apt-get install -y ctags python3-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk curl
+apt-get install -y ctags python3-pip cmake pep8 libncurses5-dev libclang-dev clang-format latexmk curl
 
-sudo -H pip3 install --upgrade pip
-sudo -H pip3 install autopep8 jedi yapf
+pip3 install --upgrade pip
+pip3 install autopep8 jedi yapf
 
 cd ~/
 rm -rf vim
@@ -20,7 +20,7 @@ git checkout v8.2.0801
 	--with-python3-config-dir=$(python3-config --configdir) \
 	--prefix=/usr/local 
 make -j8
-sudo make install
+make install
 
 cd ~
 sh <(curl -sSL https://raw.github.com/shenyunhang/vimrc/master/bootstrap.sh -L)
